@@ -1,4 +1,4 @@
-error_reporting(0);
+//error_reporting(0);
 $hijau = "\33[0;32m";
 $hijau1 = "\33[32;1m";
 $hijau2 = "\e[1;32m";
