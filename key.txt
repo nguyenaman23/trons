@@ -1,0 +1,119 @@
+$hijau = "\33[0;32m";
+$hijau1 = "\33[32;1m";
+$hijau2 = "\e[1;32m";
+$biru = "\33[0;36m";
+$biru1 = "\33[36;1m";
+$biru2 = "\e[1;34m";
+$merah = "\33[31;1m";
+$merah2 = "\e[1;31m";
+$putih2 = "\33[37;1m";
+$putih1 = "\e[1;37m";
+$hitam = "\33[30;1m";
+$kuning = "\33[33;1m";
+$kuning1 = "\33[1;33m";
+$kuning2 = "\e[1;33m";
+$cyan = "\e[0;36m";
+$cyan1 = "\e[1;36m";
+$ungu = "\e[0;35m";
+$lblue2 = "\e[1;35m";
+$abu =  "\e[0;33m";
+$abu1 = "\e[0;37m";
+$abu2 = "\e[1;30m";
+$res="\033[7m";
+$hitam="\033[0;30m";
+$abu2="\033[1;30m";
+$putih="\033[0;37m";
+$putih2="\033[1;37m";
+$red="\033[0;31m";
+$red2="\033[1;31m";
+$green="\033[0;32m";
+$green2="\033[1;32m";
+$yellow="\033[0;33m";
+$yellow2="\033[1;33m";
+$blue="\033[0;34m";
+$blue2="\033[1;34m";
+$purple="\033[0;35m";
+$purple2="\033[1;35m";
+$lblue="\033[0;36m";
+$lblue2="\033[1;36m";
+
+$reset="\033[0m";      
+$Black="\033[0;30m";      
+$Red= "\033[0;31m";         
+$Green="\033[0;32m";      
+$Yellow="\033[0;33m";       
+$Blue="\033[0;34m";         
+$Purple="\033[0;35m";      
+$Cyan="\033[0;36m";       
+$White="\033[0;37m";       
+$IYellow="\033[0;93m";      
+$IRed="\033[0;91m";         
+$BIRed="\033[1;91m";   
+$On_Cyan="\033[46m";
+$BIWhite="\033[1;97m";     
+$BIBlue="\033[1;94m";      
+$BICyan="\033[1;96m";       
+$BIBlack="\033[1;90m";     
+$BBlack="\033[1;30m";
+$IBlack="\033[0;90m";  
+$On_White="\033[47m";     
+$BIBlue="\033[1;94m";
+$On_IRed="\033[0;101m";
+$On_Red="\033[41m";   
+$On_Blue="\033[44m";
+$On_Green="\033[42m";  
+$IGreen="\033[0;92m"; 
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+$d = date('d');
+$bin = bin2hex($tool);
+$a = file_get_contents('https://api64.ipify.org/?raw');
+$r = str_replace('.','',$a);
+$o = ($r+$d+$tool);
+$p = base64_encode($o);
+$st = str_replace('=','',$p);
+$keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
+$link = "https://link1s.com/api?api=$api&url=$keys";
+$result = @json_decode(file_get_contents($link), true);
+$yt = "keytool.txt";
+$_check = file_exists("keytool.txt");
+$_check2 = file_exists("$yt");
+
+if($_check2==1){
+
+  $file = file_get_contents('keytool.txt');
+  if($file == $st)
+      {
+             echo $Green."Key accept\n";
+             system('clear');
+	  }
+}
+if($_check==0){
+for($j = 3;$j> 0;$j--){
+  echo $Cyan."Open url in ".$j;
+  sleep(1);
+  echo "\r";
+  echo "                                          \r";
+}
+system("termux-open-url ".$result["shortenedUrl"]."");
+echo $lblue2.$result["shortenedUrl"]."\n";
+echo $BIWhite."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
+    echo "Input key: ";
+    $keyy = trim(fgets(STDIN));
+if($keyy != $st){
+	echo $Red."KEY ERROR\n";
+  exit;
+}
+if($keyy == ''){
+  echo $Red."KEY ERROR\n";
+  exit;
+}
+
+  if($keyy == $st)
+      {
+             echo $Green."Key accept\n";
+             system('clear');
+             $mf = fopen("keytool.txt", "w");
+             fwrite($mf, $keyy);
+             fclose($mf);
+	  }
+}
