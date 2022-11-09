@@ -69,7 +69,7 @@ $bin = bin2hex($tool);
 $abcd = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i' ,'k' , 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
 $astr = str_replace($abcd,'',$a);
 $a = file_get_contents('https://api64.ipify.org/?raw');
-$r = str_replace('.','',$a);
+$r = str_replace('.','',$bin);
 $o = ($r+$d+$astr);
 $p = base64_encode($o);
 $st = str_replace('=','',$p);
