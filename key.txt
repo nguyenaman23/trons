@@ -67,6 +67,8 @@ $IGreen="\033[0;92m";
 
 date_default_timezone_set('Asia/Ho_Chi_Minh');
 $k = date('l');
+
+
 if($k == 'Monday'){
 $d = date('d');
 $bin = bin2hex($tool);
@@ -80,19 +82,17 @@ $st = str_replace('=','',$p);
 $keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
 $link = "$url$api&url=$keys";
 $result = @json_decode(file_get_contents($link), true);
-$yt = "keytool.txt";
-$_check = file_exists("keytool.txt");
+$yt = "key-$tool.txt";
+$_check = file_exists("key-$tool.txt");
 $_check2 = file_exists("$yt");
 
-if($_check2==1){
-
-  $file = file_get_contents('keytool.txt');
+  $file = file_get_contents("key-$tool.txt");
   if($file == $st)
       {
              echo $Green."Key accept\n";
              system('clear');
 	  }
-}
+
 if($_check==0){
 for($j = 3;$j> 0;$j--){
   echo $Cyan."Open url in ".$j;
@@ -118,12 +118,16 @@ if($keyy == ''){
       {
              echo $Green."Key accept\n";
              system('clear');
-             $mf = fopen("keytool.txt", "w");
+             $mf = fopen("key-$tool.txt", "w");
              fwrite($mf, $keyy);
              fclose($mf);
 	  }
 }
-}else if($k == 'Tuesday'){
+}
+
+
+
+else if($k == 'Tuesday'){
 	$d = date('d');
 $bin = bin2hex($tool);
 $abcd = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i' ,'k' , 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
@@ -136,19 +140,17 @@ $st = str_replace('=','',$p);
 $keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
 $link = "$url1$api1&url=$keys";
 $result = @json_decode(file_get_contents($link), true);
-$yt = "keytool.txt";
-$_check = file_exists("keytool.txt");
+$yt = "key-$tool.txt";
+$_check = file_exists("key-$tool.txt");
 $_check2 = file_exists("$yt");
 
-if($_check2==1){
 
-  $file = file_get_contents('keytool.txt');
+  $file = file_get_contents("key-$tool.txt");
   if($file == $st)
       {
              echo $Green."Key accept\n";
              system('clear');
 	  }
-}
 if($_check==0){
 for($j = 3;$j> 0;$j--){
   echo $Cyan."Open url in ".$j;
@@ -174,12 +176,16 @@ if($keyy == ''){
       {
              echo $Green."Key accept\n";
              system('clear');
-             $mf = fopen("keytool.txt", "w");
+             $mf = fopen("key-$tool.txt", "w");
              fwrite($mf, $keyy);
              fclose($mf);
 	  }
 }
-}else if($k == 'Wednesday'){
+}
+
+
+
+else if($k == 'Wednesday'){
 	$d = date('d');
 $bin = bin2hex($tool);
 $abcd = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i' ,'k' , 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
@@ -192,19 +198,19 @@ $st = str_replace('=','',$p);
 $keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
 $link = "$url2$api2&url=$keys";
 $result = @json_decode(file_get_contents($link), true);
-$yt = "keytool.txt";
-$_check = file_exists("keytool.txt");
+$yt = "key-$tool.txt";
+$_check = file_exists("key-$tool.txt");
 $_check2 = file_exists("$yt");
 
-if($_check2==1){
 
-  $file = file_get_contents('keytool.txt');
+
+  $file = file_get_contents("key-$tool.txt");
   if($file == $st)
       {
              echo $Green."Key accept\n";
              system('clear');
 	  }
-}
+
 if($_check==0){
 for($j = 3;$j> 0;$j--){
   echo $Cyan."Open url in ".$j;
@@ -230,12 +236,15 @@ if($keyy == ''){
       {
              echo $Green."Key accept\n";
              system('clear');
-             $mf = fopen("keytool.txt", "w");
+             $mf = fopen("key-$tool.txt", "w");
              fwrite($mf, $keyy);
              fclose($mf);
 	  }
 }
-}else if($k == 'Thursday'){
+}
+
+
+else if($k == 'Thursday'){
 	$d = date('d');
 $bin = bin2hex($tool);
 $abcd = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i' ,'k' , 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
@@ -248,19 +257,17 @@ $st = str_replace('=','',$p);
 $keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
 $link = "$url3$api3&url=$keys";
 $result = @json_decode(file_get_contents($link), true);
-$yt = "keytool.txt";
-$_check = file_exists("keytool.txt");
+$yt = "key-$tool.txt";
+$_check = file_exists("key-$tool.txt");
 $_check2 = file_exists("$yt");
 
-if($_check2==1){
 
-  $file = file_get_contents('keytool.txt');
+  $file = file_get_contents("key-$tool.txt");
   if($file == $st)
       {
              echo $Green."Key accept\n";
              system('clear');
 	  }
-}
 if($_check==0){
 for($j = 3;$j> 0;$j--){
   echo $Cyan."Open url in ".$j;
@@ -270,6 +277,7 @@ for($j = 3;$j> 0;$j--){
 }
 system("termux-open-url ".$result["shortenedUrl"]."");
 echo $lblue2.$result["shortenedUrl"]."\n";
+echo$st;
 echo $BIWhite."- - - - - - - - - - - - - - - - - - - - - - - - - - - -\n";
     echo "Input key: ";
     $keyy = trim(fgets(STDIN));
@@ -286,12 +294,14 @@ if($keyy == ''){
       {
              echo $Green."Key accept\n";
              system('clear');
-             $mf = fopen("keytool.txt", "w");
+             $mf = fopen("key-$tool.txt", "w");
              fwrite($mf, $keyy);
              fclose($mf);
 	  }
 }
-}else if($k == 'Friday'){
+}
+
+else if($k == 'Friday'){
 	$d = date('d');
 $bin = bin2hex($tool);
 $abcd = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i' ,'k' , 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
@@ -304,19 +314,19 @@ $st = str_replace('=','',$p);
 $keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
 $link = "$url4$api4&url=$keys";
 $result = @json_decode(file_get_contents($link), true);
-$yt = "keytool.txt";
-$_check = file_exists("keytool.txt");
+$yt = "key-$tool.txt";
+$_check = file_exists("key-$tool.txt");
 $_check2 = file_exists("$yt");
 
-if($_check2==1){
 
-  $file = file_get_contents('keytool.txt');
+
+  $file = file_get_contents("key-$tool.txt");
   if($file == $st)
       {
              echo $Green."Key accept\n";
              system('clear');
 	  }
-}
+
 if($_check==0){
 for($j = 3;$j> 0;$j--){
   echo $Cyan."Open url in ".$j;
@@ -342,12 +352,15 @@ if($keyy == ''){
       {
              echo $Green."Key accept\n";
              system('clear');
-             $mf = fopen("keytool.txt", "w");
+             $mf = fopen("key-$tool.txt", "w");
              fwrite($mf, $keyy);
              fclose($mf);
 	  }
 }
-}else if($k == 'Saturday'){
+}
+
+
+else if($k == 'Saturday'){
 	$d = date('d');
 $bin = bin2hex($tool);
 $abcd = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i' ,'k' , 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
@@ -360,19 +373,19 @@ $st = str_replace('=','',$p);
 $keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
 $link = "https://link1s.com/api?api=2745ad33870302c37296d1512b8fd4d45182d806&url=$keys";
 $result = @json_decode(file_get_contents($link), true);
-$yt = "keytool.txt";
-$_check = file_exists("keytool.txt");
+$yt = "key-$tool.txt";
+$_check = file_exists("key-$tool.txt");
 $_check2 = file_exists("$yt");
 
-if($_check2==1){
 
-  $file = file_get_contents('keytool.txt');
+
+  $file = file_get_contents("key-$tool.txt");
   if($file == $st)
       {
              echo $Green."Key accept\n";
              system('clear');
 	  }
-}
+
 if($_check==0){
 for($j = 3;$j> 0;$j--){
   echo $Cyan."Open url in ".$j;
@@ -398,12 +411,15 @@ if($keyy == ''){
       {
              echo $Green."Key accept\n";
              system('clear');
-             $mf = fopen("keytool.txt", "w");
+             $mf = fopen("key-$tool.txt", "w");
              fwrite($mf, $keyy);
              fclose($mf);
 	  }
 }
-}else if($k == 'Sunday'){
+}
+
+
+else if($k == 'Sunday'){
 	$d = date('d');
 $bin = bin2hex($tool);
 $abcd = array('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ,'i' ,'k' , 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');
@@ -416,19 +432,19 @@ $st = str_replace('=','',$p);
 $keys = "https://detailed-thorn-divan.glitch.me/?key=$st";
 $link = "$url$api&url=$keys";
 $result = @json_decode(file_get_contents($link), true);
-$yt = "keytool.txt";
-$_check = file_exists("keytool.txt");
+$yt = "key-$tool.txt";
+$_check = file_exists("key-$tool.txt");
 $_check2 = file_exists("$yt");
 
-if($_check2==1){
 
-  $file = file_get_contents('keytool.txt');
+
+  $file = file_get_contents("key-$tool.txt");
   if($file == $st)
       {
              echo $Green."Key accept\n";
              system('clear');
 	  }
-}
+
 if($_check==0){
 for($j = 3;$j> 0;$j--){
   echo $Cyan."Open url in ".$j;
@@ -454,7 +470,7 @@ if($keyy == ''){
       {
              echo $Green."Key accept\n";
              system('clear');
-             $mf = fopen("keytool.txt", "w");
+             $mf = fopen("key-$tool.txt", "w");
              fwrite($mf, $keyy);
              fclose($mf);
 	  }
